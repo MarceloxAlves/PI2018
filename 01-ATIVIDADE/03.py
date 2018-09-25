@@ -13,7 +13,6 @@ def pesquisa_href( conteudo ):
         if( not aspa ):
             if( a == chave[ponteiro] ):
                 if( ponteiro == len(chave)-1 ):
-                    print(a)
                     link = True
                     ponteiro = 0
                 else:
@@ -28,7 +27,8 @@ def pesquisa_href( conteudo ):
         if aspa:
             if (ord(a) == 34 or ord(a) == 39):
                 aspa = False
-                lista.append(url)
+                if(len(url) > 10):
+                    lista.append(url)
                 link = False
                 url = ''
             else:
