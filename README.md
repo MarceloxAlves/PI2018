@@ -35,6 +35,6 @@ Este repositório é utilizado para armazenar conteúdos da disciplina de progra
 * [Moment API](https://github.com/MarceloxAlves/moment-api)
 
 ### Expectativa quanto a disciplina
-Espero melhorar meu arsenal de conhecimentos teóricos e práticos. 
+Espero melhorar meus conhecimentos teóricos e práticos. 
 Podendo desta forma aplicá-los no meu contexto profissional. 
 
