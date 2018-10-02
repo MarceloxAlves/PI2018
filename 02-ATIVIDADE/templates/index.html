@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BuscApp</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+
+        </div>
+
+        <div class="jumbotron" style="margin-top:10%; text-align:center">
+            <h1>BuscApp</h1>
+            <div class="alert alert-info" id="msg" style="display:none" role="alert">Pesquisando...</div>
+            <div class="input-group mb-2 mr-sm-2">
+                <input type="text" class="form-control" id="busca" placeholder="Palavra Chave">
+                <div class="input-group-prepend">
+                    <div class="input-group-text btn" onclick="onBusca(busca.value)">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <div class="list-group" id="resultados">
+         
+       </div>
+
+        <footer class="footer">
+            <p>&copy; Marcelo Alves | Jesus Addad 2018</p>
+        </footer>
+
+    </div>
+</body>
+<script>
+  $( "#busca" ).keydown(function(e) {
+        var code = e.keyCode || e.which;
+        if(code == 13) {
+          onBusca($('#busca').val())
+        }
+  });
+
+    function show(tipo,texto){
+        $('#msg').hide()
+        $('#msg').text(texto)
+        $('#msg').removeClass()
+        $('#msg').addClass("alert alert-"+tipo)
+        $('#msg').fadeIn("slow")
+    }
+
+    function onBusca(busca){
+        show('info',"Pesquisando....")
+        $.ajax({
+            url: '/buscar',
+            data: {busca:busca},
+            type: 'POST',
+            success: function(response) {
+                $('#resultados').html('')
+                $.each(JSON.parse(response), function( key, value ) {
+                    $('#resultados').append('<a href="'+value.url+'" target="_blank" class="list-group-item">'+value.result+'<p><small><i>'+value.url+'<br> camada: '+value.camada+'</i></small><p></a>')
+                })
+                show('success',"Pesquisa Concluída")
+            },
+            error: function(error) {
+                console.log(error);
+                show('danger',"Erro ao Pesquisar")
+            }
+        });
+    }
+
+</script>
+</html>
