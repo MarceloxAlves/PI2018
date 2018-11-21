@@ -1,0 +1,35 @@
+
+.site {
+    margin: 2%;
+}
+
+.vote {
+    float: right;
+    -webkit-transition: all 2s; /* Safari */
+    transition: all 2s;
+}
+
+.base-progress{
+    width: 50%;
+    float: right;
+    height: 30px !important;
+    background-color: rgba(16, 18, 7, 0.2) !important;
+}
+
+.myprogress{
+    width: 0%;
+    -webkit-transition: width 1s linear;  /* Safari */
+    transition: width 1s linear;
+    background: #4cae4c !important;
+    text-align: left !important;
+
+}
+.progress-text{
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+.btn-add{
+    float: right;
+    margin-bottom: 10px;
+}

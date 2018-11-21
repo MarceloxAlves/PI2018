@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="panel panel-primary">
+    <h3>Question Management</h3>
+    <div class="panel-body">
+        {%if question %}
+        <table class="table table-bordered">
+            <tr>
+                <th>Question</th>
+                <th>Date Publications</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>{{question}}
+                </td>
+                <td>{{question.pub_date}}</td>
+                <td>
+                    {% if question.closed %}
+                    <small class="badge badge-danger">Closed</small>
+                    {% else %}
+                    <small class="badge badge-success">Opened</small>
+                    {% endif%}
+                </td>
+                <td>
+                    <div class="btn-group" role="group">
+                        {% if not question.closed %}
+                        <a
+                           data-msg = "Deseja fechar esta question?"
+                           class="btn btn-warning action" positive="fechar">Fechar</a>
+                        {% else %}
+                        <a href="{% url 'question_closed' question.id %}" class="btn btn-success">Abrir</a>
+                        {% endif %}
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <ul class="list-group">
+             <li class="list-group-item bg-success active">Associated choices
+            {% for choice in question.choice_set.all %}
+            <li class="list-group-item"> {{choice}}
+            <a style="float: right"
+               href="#" class="btn btn-sm btn-danger action"
+               param = "{{choice.id}}"
+               data-msg="Do you want to remove this choice from the question?"
+               positive="remove">Remove</a></li>
+            {% endfor %}
+        </ul>
+        <hr>
+        <ul class="list-group">
+             <li class="list-group-item bg-secondary active">Unrelated choices
+            {% for choice in unrelated %}
+            <li class="list-group-item"> {{choice}}
+             <a style="float: right"
+               href="#" class="btn btn-sm btn-success action"
+               param = "{{choice.id}}"
+               data-msg="Do you want to add this choice to the question?"
+               positive="attach">Attach</a></li>
+            {% endfor %}
+        </ul>
+
+        {% endif %}
+    </div>
+    <hr>
+
+    <div class="alert" role="alert" id="result"></div>
+    <a href="{% url 'home' %}" class="btn">Voltar</a>
+</div>
+<script>
+    function fechar(){
+        top.location.href = "{% url 'question_closed' question.id %}"
+    }
+
+     function remove(choice_id){
+         var url = "{% url 'choice_remove' question.id 9999999 %}".replace(9999999, choice_id);
+         top.location.href = url
+
+    }
+
+     function attach(choice_id){
+        var url = "{% url 'choice_attach' question.id 9999999 %}".replace(9999999, choice_id);
+         top.location.href = url
+    }
+</script>
+{% endblock %}

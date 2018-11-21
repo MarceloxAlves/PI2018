@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="panel panel-primary">
+    <h3>Add Choice</h3>
+    <div class="panel-body">
+        <div class="col-md-12">
+            <form action="{% url 'choice_add' %}" class="form-horizontal" method="post">
+                {% csrf_token %}
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        {% for field in form %}
+                        <div class="form-group">
+                            {{ field.errors }}
+                            <label class="col-md-3 col-xs-12 control-label">{{ field.label_tag }}</label>
+                            <div class="col-md-6 col-xs-12">
+                                <div class="input-group">
+                                    {{ field }}
+                                </div>
+                                {% if field.help_text %}
+                                <span class="help-block">{{ field.errors }}</span>
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% endfor %}
+
+                    </div>
+                    <div class="panel-footer">
+                        <button type="reset" class="btn btn-warning">Novo</button>
+                        <button type="submit" class="btn btn-primary">Salvar</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <hr>
+    <a href="{% url 'home' %}" class="btn">Voltar</a>
+</div>
+{% endblock %}

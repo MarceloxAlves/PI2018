@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="panel panel-primary">
+    <h3>Questions</h3>
+    <div class="panel-body">
+        <div class="btn-group btn-add" role="group">
+            <a href="{% url 'question_add' %}" class="btn btn-primary">Add Question</a>
+            <a href="{% url 'choice_add' %}" class="btn btn-secondary">Add Choice</a>
+        </div>
+        {%if questions %}
+        <table class="table table-bordered">
+            <tr>
+                <th>Question</th>
+                <th>Date Publications</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+            {% for question in questions %}
+            <tr>
+                <td><a href="{% url 'exibir_question' question.id %}" class="list-group-item list-group-item-action"
+                       data-toggle="tooltip" data-placement="top" title="Clique aqui para responder">{{question}}</a>
+                </td>
+                <td>{{question.pub_date}}</td>
+                <td>
+                    {% if question.closed %}
+                    <small class="badge badge-danger">Closed</small>
+                    {% else %}
+                    <small class="badge badge-success">Opened</small>
+                    {% endif%}
+                </td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a href="{% url 'manage' question.id %}" class="btn btn-warning">Manage</a>
+                        {% if question.closed %}
+                        <a href="{% url 'result' question.id %}" class="btn btn-primary">Result</a>
+                        {% endif %}
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% endif %}
+    </div>
+</div>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+{% endblock %}

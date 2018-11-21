@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="panel panel-primary">
+    <h3>Result</h3>
+    <div class="panel-body">
+        {%if question %}
+        {{question}}
+        <h4>Total votes: {{question.result.total}}</h4>
+        <div class="list-group">
+            {% for choice in question.result.choices %}
+            <a class="list-group-item list-group-item-action">
+                {{choice}}
+                <div class="progress base-progress">
+                    <div class="progress-bar myprogress" role="progressbar" aria-valuenow="{{choice.percentual}}"
+                         aria-valuemin="0" aria-valuemax="100"><span class="progress-text">{{choice.percentual}}% &nbsp;/ {{choice.votes}}
+                        vote{{choice.votes|pluralize}}</span>
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+    <hr>
+    <a href="{% url 'home' %}" class="btn">Voltar</a>
+</div>
+<script>
+    $(document).ready(function () {
+        $('.myprogress').each(function() {
+           $(this).css("width", $(this).attr('aria-valuenow')+'%')
+        });
+    })
+</script>
+{% endblock %}

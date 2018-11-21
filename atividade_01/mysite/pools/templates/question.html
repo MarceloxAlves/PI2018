@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="panel panel-primary">
+    <h3>Details</h3>
+    {% if voted %}
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Muito bem!</h4>
+        <p>Seu voto foi computado com sucesso!</p>
+        <hr>
+        <p class="mb-0">Você pode votar várias vezes</p>
+    </div>n
+    {% endif%}
+    <div class="panel-body">
+        {%if question %}
+        {{question}}
+        <small>{{question.pub_date}}</small>
+        <ul class="list-group">
+            {% for choice in question.choice_set.all %}
+            <li class="list-group-item choice"> {{choice}} <a href="{% url 'votar' question.id choice.id %}"
+                                                              class="btn btn-sm btn-success vote">Votar</a></li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+    <hr>
+    <a href="{% url 'home' %}" class="btn">Voltar</a>
+</div>
+{% endblock %}
