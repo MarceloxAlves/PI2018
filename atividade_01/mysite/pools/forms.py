@@ -21,7 +21,6 @@ class QuestionForm(forms.ModelForm):
             )
         }
 
-
 class ChoiceForm(forms.ModelForm):
     class Meta:
         model = Choice
@@ -39,3 +38,7 @@ class ChoiceForm(forms.ModelForm):
                 }
             )
         }
+
+class ArticleForm(forms.Form):
+    title = forms.CharField()
+    pub_date = forms.DateField()

@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from pools import views
 
 urlpatterns = [
@@ -29,5 +29,6 @@ urlpatterns = [
     path('question/<int:question_id>/remove/<int:choice_id>', views.choice_remove, name='choice_remove'),
     path('question/add', views.question_add, name='question_add'),
     path('question/choice/add', views.choice_add, name='choice_add'),
+    path('posts/',include('myapp.urls'), name='posts'),
 
 ]

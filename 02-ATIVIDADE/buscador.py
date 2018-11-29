@@ -48,7 +48,7 @@ def get_links(urls, keyword, cm):
 
 def findSearch(url, nivel, keyword):
     print("Buacando nivel %s" % nivel)
-    if nivel == 0:
+    if nivel == 1:
         return url
     return findSearch(get_links(url,keyword, super_nivel-nivel), nivel-1, keyword)
 
