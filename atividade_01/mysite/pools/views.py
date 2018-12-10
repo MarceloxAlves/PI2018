@@ -45,7 +45,7 @@ def question_add(request):
         form = QuestionForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('home')
+            return redirect('questions')
     else:
         form  = QuestionForm()
 
@@ -56,7 +56,7 @@ def choice_add(request):
         form = ChoiceForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('home')
+            return redirect('questions')
     else:
         form  = ChoiceForm()
 

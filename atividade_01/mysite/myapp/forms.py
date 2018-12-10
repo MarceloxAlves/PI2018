@@ -5,7 +5,23 @@ import re;
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = "__all__",
+        fields = ['title', 'text']
+        labels = {
+            'title': 'Título',
+            'text': 'Texto'
+        }
+        widgets = {
+            'title': forms.TextInput(
+                attrs={
+                    'class': "form-control",
+                }
+            ),
+            'text': forms.Textarea(
+                attrs={
+                    'class': "form-control",
+                }
+            )
+        }
 
 
     """ def is_valid(self):
@@ -20,9 +36,10 @@ class PostForm(forms.ModelForm):
 
         return True """
 
-    def clean(self):
+    def clean_text(self):
         black_list = {"Porra", "Puta"}
+        data = self.cleaned_data['text']
         for palavra in black_list:
-            if re.search('\\b' + palavra + '\\b', self.cleaned_data['text'], re.IGNORECASE):
-                raise forms.ValidationError("Seu texto contém palavras inadequeadas", code="text", )
-        return self.cleaned_data
+            if re.search('\\b' + palavra + '\\b', data, re.IGNORECASE):
+                raise forms.ValidationError("Seu texto contém palavras inadequeadas" )
+        return data

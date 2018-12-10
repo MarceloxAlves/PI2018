@@ -1,19 +1,10 @@
-{% extends "base.html" %}
-
-{% block body %}
-<div class="panel panel-primary">
-    <h3>Add Question</h3>
-    <div class="panel-body">
-        <div class="col-md-12">
-            <form action="{% url 'question_add' %}" class="form-horizontal" method="post">
-                {% csrf_token %}
-                <div class="panel panel-default">
+ <div class="panel panel-default">
                     <div class="panel-body">
                         {% for field in form %}
                         <div class="form-group">
                             {{ field.errors }}
-                            <label class="col-md-3 col-xs-12 control-label">{{ field.label_tag }}</label>
-                            <div class="col-md-6 col-xs-12">
+                            <label class="col-md-12 col-xs-12 control-label">{{ field.label_tag }}</label>
+                            <div class="col-md-12 col-xs-12">
                                 <div class="input-group">
                                     {{ field }}
                                 </div>
@@ -26,15 +17,7 @@
 
                     </div>
                     <div class="panel-footer">
-                        <button type="reset" class="btn btn-warning">Novo</button>
+                        <a class="btn btn-success" href="{% url 'posts' %}">Voltar</a>
                         <button type="submit" class="btn btn-primary">Salvar</button>
                     </div>
                 </div>
-            </form>
-
-        </div>
-    </div>
-    <hr>
-    <a href="{% url 'questions' %}" class="btn">Voltar</a>
-</div>
-{% endblock %}

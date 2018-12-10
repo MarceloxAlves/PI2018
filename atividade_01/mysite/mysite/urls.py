@@ -15,20 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from pools import views
+from .views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name="home"),
-    path('question/<int:question_id>', views.exibir_question, name='exibir_question'),
-    path('question/<int:question_id>/vote/<int:choice_id>', views.vote, name='votar'),
-    path('question/<int:question_id>/result', views.result, name='result'),
-    path('question/<int:question_id>/manage', views.manager, name='manage'),
-    path('question/<int:question_id>/close', views.question_closed, name='question_closed'),
-    path('question/<int:question_id>/attach/<int:choice_id>', views.choice_attach, name='choice_attach'),
-    path('question/<int:question_id>/remove/<int:choice_id>', views.choice_remove, name='choice_remove'),
-    path('question/add', views.question_add, name='question_add'),
-    path('question/choice/add', views.choice_add, name='choice_add'),
     path('posts/',include('myapp.urls'), name='posts'),
+    path('books/',include('biblio.urls'), name='books'),
+    path('questions/',include('pools.urls'), name='questions'),
+    path('',index, name='root'),
 
 ]

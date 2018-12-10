@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block body %}
+<h1 class="panel-heading">My Library</h1>
+<a href="{% url 'add_post' %}" class="btn btn-primary">Add Book</a>
+<hr>
+{% for book in books %}
+  Tem livro
+{% endfor %}
+</form>
+{% endblock%}

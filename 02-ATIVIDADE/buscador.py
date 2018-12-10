@@ -55,7 +55,7 @@ def findSearch(url, nivel, keyword):
 
 @app.route("/")
 def main():
-    return render_template('./index.html')
+    return render_template('./root_index.html')
 
 @app.route("/buscar", methods=['POST'])
 def buscar():
