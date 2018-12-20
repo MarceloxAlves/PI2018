@@ -1,16 +1,16 @@
 import requests
 
-TOKEN  = "TOKEN"
+TOKEN  = "ACCESS TOKEN"
 header = {
 "Content-Type": "application/json",
-"Authorization":"Bearer " + TOKEN
+"Authorization":"Bearer <Access Token>"
 }
 
-payload = {
+body = {
 
 }
 
-url = "https://api.sandbox.paypal.com/v1/payments/payment";
-response = requests.get(url,header=header).json()
+url = "https://api.sandbox.paypal.com/v1/payments/payout";
+response = requests.get(url,data=body, header=header).json()
 
 print(response)
