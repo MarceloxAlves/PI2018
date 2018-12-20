@@ -4,22 +4,10 @@
     <bookmark url="file://$PROJECT_DIR$/aulas_django/mysite/polls/forms.py" line="19" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3207f56d-a67d-4084-903a-e7b710b89ad6" name="Default" comment="mam">
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-APIS/Exercicio-sala-01/exemplo01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-APIS/Exercicio-sala-01/exemplo02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-APIS/Exercicio-sobre-WEB-APIs-01/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-APIS/Exercicio-sobre-WEB-APIs-01/trello.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connectedin.por_fazer/usuarios/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PROGRAMACAO INTERNET.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PROGRAMACAO INTERNET.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="3207f56d-a67d-4084-903a-e7b710b89ad6" name="Default" comment="atividade WEB APIS">
+      <change afterPath="$PROJECT_DIR$/WEB-APIS/Exercicio-sobre-WEB-APIs-01/issuu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Istudy/social/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Istudy/social/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Istudy/social/templates/grupos.html" beforeDir="false" afterPath="$PROJECT_DIR$/Istudy/social/templates/grupos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Istudy/social/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Istudy/social/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connectedin_por_fazer/perfis/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/connectedin_por_fazer/perfis/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-APIS/Exercicio-sobre-WEB-APIs-01/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-APIS/Exercicio-sobre-WEB-APIs-01/readme.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +17,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/PROGRAMACAO_INTERNET$01.coverage" NAME="01 Coverage Results" MODIFIED="1543512333000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-ATIVIDADE" />
+    <SUITE FILE_PATH="coverage/PROGRAMACAO_INTERNET$issuu.coverage" NAME="issuu Coverage Results" MODIFIED="1545324789998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WEB-APIS/Exercicio-sobre-WEB-APIs-01" />
     <SUITE FILE_PATH="coverage/PROGRAMACAO_INTERNET$exemplo01.coverage" NAME="exemplo01 Coverage Results" MODIFIED="1545244359353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WEB-APIS/Exercicio-sala-01" />
     <SUITE FILE_PATH="coverage/PROGRAMACAO_INTERNET$trello.coverage" NAME="trello Coverage Results" MODIFIED="1545288756095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WEB-APIS/Exercicio-sobre-WEB-APIs-01" />
   </component>
@@ -36,13 +25,14 @@
     <session id="-1524096232">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="21" />
+          <entry key="project.closed" value="22" />
           <entry key="project.open.time.104" value="1" />
           <entry key="project.open.time.116" value="1" />
           <entry key="project.open.time.122" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.56" value="1" />
@@ -56,7 +46,7 @@
           <entry key="project.open.time.73" value="1" />
           <entry key="project.open.time.81" value="1" />
           <entry key="project.open.time.96" value="1" />
-          <entry key="project.opened" value="24" />
+          <entry key="project.opened" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -64,10 +54,10 @@
           <entry key="css" value="518" />
           <entry key="html" value="8052" />
           <entry key="js" value="830" />
-          <entry key="md" value="118" />
-          <entry key="py" value="10317" />
+          <entry key="md" value="135" />
+          <entry key="py" value="10735" />
           <entry key="rnc" value="1" />
-          <entry key="txt" value="97" />
+          <entry key="txt" value="115" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -75,9 +65,9 @@
           <entry key="CSS" value="518" />
           <entry key="HTML" value="8052" />
           <entry key="JavaScript" value="830" />
-          <entry key="Markdown" value="116" />
-          <entry key="PLAIN_TEXT" value="99" />
-          <entry key="Python" value="10317" />
+          <entry key="Markdown" value="133" />
+          <entry key="PLAIN_TEXT" value="117" />
+          <entry key="Python" value="10735" />
           <entry key="RNG Compact" value="1" />
         </counts>
       </usages-collector>
@@ -88,7 +78,7 @@
           <entry key="js" value="7" />
           <entry key="md" value="3" />
           <entry key="png" value="1" />
-          <entry key="py" value="125" />
+          <entry key="py" value="127" />
           <entry key="rnc" value="1" />
         </counts>
       </usages-collector>
@@ -100,7 +90,7 @@
           <entry key="JavaScript" value="7" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="125" />
+          <entry key="Python" value="127" />
           <entry key="RNG Compact" value="1" />
         </counts>
       </usages-collector>
@@ -108,18 +98,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/connectedin.por_fazer/connectedin/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="e#635#667#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/connectedin.por_fazer/usuarios/forms.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -185,12 +163,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WEB-APIS/Exercicio-sobre-WEB-APIs-01/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="85">
-                <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <first_editor>
+                <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -199,11 +177,23 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WEB-APIS/Exercicio-sobre-WEB-APIs-01/issuu.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-65">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WEB-APIS/Exercicio-sobre-WEB-APIs-01/trello.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="170">
+              <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-end-line="32" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
                 <marker date="1545288882235" expanded="true" signature="272:1105" ph="..." />
@@ -237,7 +227,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/atividade_01/mysite/mysite/templates/form_base.html" />
         <option value="$PROJECT_DIR$/atividade_01/mysite/biblio/models.py" />
         <option value="$PROJECT_DIR$/atividade_01/mysite/biblio/forms.py" />
         <option value="$PROJECT_DIR$/atividade_01/mysite/biblio/templates.html" />
@@ -288,6 +277,7 @@
         <option value="$PROJECT_DIR$/WEB-APIS/Exercicio-sala-01/exemplo02.py" />
         <option value="$PROJECT_DIR$/WEB-APIS/Exercicio-sobre-WEB-APIs-01/trello.py" />
         <option value="$PROJECT_DIR$/WEB-APIS/Exercicio-sobre-WEB-APIs-01/readme.md" />
+        <option value="$PROJECT_DIR$/WEB-APIS/Exercicio-sobre-WEB-APIs-01/issuu.py" />
       </list>
     </option>
   </component>
@@ -355,19 +345,19 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Marcelo\Documents\IFPI\4 PERIODO\PROGRAMACAO INTERNET\WEB-APIS\Exercicio-sala-01" />
-      <recent name="C:\Users\Marcelo\Documents\IFPI\4 PERIODO\PROGRAMACAO INTERNET\Istudy\social\templates" />
-      <recent name="C:\Users\Marcelo\Documents\IFPI\4 PERIODO\PROGRAMACAO INTERNET\Istudy\social\templates\inc" />
-      <recent name="C:\Users\Marcelo\Documents\IFPI\4 PERIODO\PROGRAMACAO INTERNET\Istudy\social\static\js" />
-      <recent name="C:\Users\Marcelo\Documents\IFPI\4 PERIODO\PROGRAMACAO INTERNET\Istudy\social\static\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Marcelo\Documents\IFPI\4 PERIODO\PROGRAMACAO INTERNET\atividade_01\mysite\mysite\templates" />
       <recent name="C:\Users\Marcelo\Documents\IFPI\4 PERIODO\PROGRAMACAO INTERNET\atividade_01\mysite\pools\static\scripts" />
       <recent name="C:\Users\Marcelo\Documents\IFPI\4 PERIODO\PROGRAMACAO INTERNET\aulas_django" />
       <recent name="C:\Users\Marcelo\Documents\IFPI\4 PERIODO\PROGRAMACAO INTERNET\02-ATIVIDADE\templates" />
       <recent name="C:\Users\Marcelo\Documents\IFPI\4 PERIODO\PROGRAMACAO INTERNET\02-ATIVIDADE" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Marcelo\Documents\IFPI\4 PERIODO\PROGRAMACAO INTERNET\WEB-APIS\Exercicio-sobre-WEB-APIs-01" />
+      <recent name="C:\Users\Marcelo\Documents\IFPI\4 PERIODO\PROGRAMACAO INTERNET\WEB-APIS\Exercicio-sala-01" />
+      <recent name="C:\Users\Marcelo\Documents\IFPI\4 PERIODO\PROGRAMACAO INTERNET\Istudy\social\templates" />
+      <recent name="C:\Users\Marcelo\Documents\IFPI\4 PERIODO\PROGRAMACAO INTERNET\Istudy\social\templates\inc" />
+      <recent name="C:\Users\Marcelo\Documents\IFPI\4 PERIODO\PROGRAMACAO INTERNET\Istudy\social\static\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -382,7 +372,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.trello">
+  <component name="RunManager" selected="Python.issuu">
     <configuration name="01" type="PythonConfigurationType" factoryName="Python">
       <module name="PROGRAMACAO INTERNET" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -419,28 +409,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01-ATIVIDADE/03-soup.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="03" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PROGRAMACAO INTERNET" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/01-ATIVIDADE" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01-ATIVIDADE/03.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -493,6 +461,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="issuu" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PROGRAMACAO INTERNET" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WEB-APIS/Exercicio-sobre-WEB-APIs-01" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WEB-APIS/Exercicio-sobre-WEB-APIs-01/issuu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="trello" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PROGRAMACAO INTERNET" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -517,14 +507,15 @@
     </configuration>
     <list>
       <item itemvalue="Python.01" />
-      <item itemvalue="Python.03" />
       <item itemvalue="Python.03-soup" />
       <item itemvalue="Python.buscador" />
       <item itemvalue="Python.exemplo01" />
       <item itemvalue="Python.trello" />
+      <item itemvalue="Python.issuu" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.issuu" />
         <item itemvalue="Python.trello" />
         <item itemvalue="Python.exemplo01" />
       </list>
@@ -600,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544553729536</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="atividade WEB APIS">
+      <created>1545289348716</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1545289348716</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -610,7 +608,7 @@
     <frame x="-8" y="32" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25869894" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2624811" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -699,7 +697,8 @@
     <MESSAGE value="Post de anexos funcionando" />
     <MESSAGE value="delecao" />
     <MESSAGE value="Agora deu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Agora deu" />
+    <MESSAGE value="atividade WEB APIS" />
+    <option name="LAST_COMMIT_MESSAGE" value="atividade WEB APIS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -713,20 +712,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/atividade_01/mysite/mysite/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atividade_01/mysite/pools/static/scripts/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/atividade_01/mysite/pools/templates/question.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -946,6 +931,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Python/Lib/urllib/parse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="815" column="4" selection-start-line="815" selection-start-column="4" selection-end-line="815" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/connectedin.por_fazer/connectedin/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -995,13 +987,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-APIS/Exercicio-sala-01/exemplo02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WEB-APIS/Exercicio-sala-01/exemplo01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1009,17 +994,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python/Lib/urllib/parse.py">
+    <entry file="file://$PROJECT_DIR$/WEB-APIS/Exercicio-sala-01/exemplo02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-APIS/Exercicio-sobre-WEB-APIs-01/readme.md">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python/Lib/hashlib.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
-          <caret line="815" column="4" selection-start-line="815" selection-start-column="4" selection-end-line="815" selection-end-column="4" />
+          <caret line="164" column="4" selection-start-line="164" selection-start-column="4" selection-end-line="164" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WEB-APIS/Exercicio-sobre-WEB-APIs-01/trello.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="170">
+          <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-end-line="32" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <marker date="1545288882235" expanded="true" signature="272:1105" ph="..." />
@@ -1027,18 +1032,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-APIS/Exercicio-sobre-WEB-APIs-01/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="85">
-            <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
+    <entry file="file://$PROJECT_DIR$/WEB-APIS/Exercicio-sobre-WEB-APIs-01/issuu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-65">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
-      <provider editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
